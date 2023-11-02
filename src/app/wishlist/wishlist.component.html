@@ -1,0 +1,13 @@
+<div class="container" >
+    <div class="row p-5 mr-10" style="display: flex; gap: 2vw;">
+        <div class="col-sm " class="card" style="width: 18rem;" *ngFor="let art of myWishlist">
+            <img src="https://www.artic.edu/iiif/2/{{art.image_id}}/full/843,/0/default.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">{{art.title}}</h4>
+                <strong><p class="card-text">{{art.artist_title}}</p></strong>
+                <!-- <p class="card-text">{{art.publication_history}}</p> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <h1>Hello jii</h1> -->

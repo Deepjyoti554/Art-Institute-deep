@@ -1,0 +1,31 @@
+.container{
+    min-height: 50vw;
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.card{
+    margin: 3vw;
+}   
+.card > img{
+    height: 20vw;
+    width: 20vw;
+}   
+.paginator{
+    display: flex;
+    justify-content: center;
+    align-items: cent9r;
+    width: 90%;
+}
+/* ************** */
+.search {
+    display: flex;
+    
+    width: 300vw;
+    align-items: flex-start;
+    gap: 10px;
+}
+.search>input{
+    width: 50vw;
+    margin-left: 15vw;
+}

@@ -1,0 +1,20 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw;
+    margin: 0 2vw;
+    
+}
+.nav_list{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    cursor: pointer;
+}
+
+.navbar>button{
+    padding: 7px 15px;
+    border-radius: 2vw;
+    cursor: pointer;
+}

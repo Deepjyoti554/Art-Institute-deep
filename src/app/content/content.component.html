@@ -1,0 +1,28 @@
+<form [formGroup]="searchArt" (ngSubmit)="onSubmit()">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <div class="search">
+        <input type="text" name="" id="" placeholder="Search here" formControlName="name">
+        <button>Search</button>
+    </div>
+</form>
+<div class="container">
+    <div class="row">
+        <div id="artwork-{{art.id}}" class="col-sm" class="card" style="width: 18rem;" *ngFor="let art of artsArray">
+            <img src="https://www.artic.edu/iiif/2/{{art.image_id}}/full/843,/0/default.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{art.title}}</h5>
+                <p class="card-text">{{art.artist_title}}</p>
+                <div class="d-flex align-items-center">
+                    <a class="btn btn-primary" routerLink="/view?id" (click)="showProduct(art.id)">View</a>
+                    <i (click)="clickEvent(art.id)" class="bi ms-3 fs-4 text-danger"
+                    [ngClass]="{'bi-heart-fill' :status(art.id),  'bi-heart' : !status(art.id)}"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="paginator">
+    <mat-paginator (page)="handlePageEvent($event)" [length]="100" [pageSize]="12" [pageSizeOptions]="[6, 12, 24, 36]"
+        aria-label="Select page">
+    </mat-paginator>
+</div>

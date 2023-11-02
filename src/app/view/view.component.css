@@ -1,0 +1,14 @@
+.card>img{
+    height: 50vh;
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25vw;
+}
+.viewContent{
+    padding: 5vw;
+}
+.viewCard>img{
+    height: 42vw;
+}
