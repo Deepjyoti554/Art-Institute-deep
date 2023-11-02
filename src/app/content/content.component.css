@@ -21,7 +21,7 @@
 .search {
     display: flex;
     
-    width: 300vw;
+    width: 100%;
     align-items: flex-start;
     gap: 10px;
 }
